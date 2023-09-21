@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Inclusive Sans', sans-serif;
-    background: linear-gradient(70deg, blue, purple, pink);
+    background: linear-gradient(70deg, hsl(300, 50%, 70%), hsl(300, 75%, 55%), hsl(300, 95%, 65%));
 }
 
 h1 {
@@ -38,10 +38,6 @@ canvas {
 
 .Texto h2 {
     font-size: 50px;
-}
-
-#B12 {
-    margin-left: 30px;
 }
 
 .Button{
@@ -111,7 +107,7 @@ canvas {
 
 @media (max-width: 468px) {
     body {
-        background: linear-gradient(100deg, blue, purple, pink);
+        background: linear-gradient(100deg, hsl(300, 94%, 45%), hsl(300, 94%, 45%), hsl(300, 94%, 45%));
 
     }
 }
