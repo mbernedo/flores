@@ -1,14 +1,12 @@
 body {
     margin: 0;
-    width: 100%;
-    height: 100%;
     font-family: 'Inclusive Sans', sans-serif;
     background: linear-gradient(70deg, hsl(300, 50%, 70%), hsl(300, 75%, 55%), hsl(300, 95%, 65%));
 }
 
 h1 {
     text-align: center;
-    font-size: 100px;
+    font-size: 80px;
 }
 
 .Con-2 {
