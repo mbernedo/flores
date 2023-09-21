@@ -1,14 +1,10 @@
-let h1 = document.getElementById("Titulo");
-let Boton1 = document.getElementById("B1");
-
-document.getElementById("BotonCerrar").addEventListener('click', function () {
+window.addEventListener('click', function () {
   const ContenedorBotones = document.querySelector(".Con");
   ContenedorBotones.style.display = "none";
   const audio = new Audio('cancion.mp3');
   audio.play();
   document.querySelector(".Texto").style.display = "block";
   CrearVarias();
-  h1.remove();
 })
 
 const canvas = document.getElementById('Flor');
@@ -137,16 +133,16 @@ function DibujarFlorSinTallo(x, y, NumeroPetalos, RadioXPetalo, RadioYPetalo, Al
 }
 
 function CrearVarias() {
-  const numFlores = 7;
+  const numFlores = 2;
 
   // Espaciamiento y tamaño de cada flor
-  const espacioX = canvas.width / 4;
+  const espacioX = canvas.width / 3;
   const espacioY = canvas.height / 3;
   const TamañoFlor = 130;
 
   for (let i = 0; i <= numFlores; i++) {
-    const fila = Math.floor(i / 4);
-    const columna = i % 4;
+    const fila = Math.floor(i);
+    const columna = i;
     const x = espacioX * columna + espacioX / 2;
     const y = espacioY * fila + espacioY / 2;
 
