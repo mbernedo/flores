@@ -2,7 +2,7 @@ window.addEventListener('click', function () {
   const ContenedorBotones = document.querySelector(".Con");
   ContenedorBotones.style.display = "none";
   const audio = new Audio('cancion.mp3');
-  // audio.play();
+  audio.play();
   document.querySelector(".Texto").style.display = "block";
   CrearVarias();
 })
